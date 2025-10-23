@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} - La Mia Azienda</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Lavanderia Pulitolindo</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('home') }}" class="{% if title == 'Home' %}active{% endif %}">Home</a></li>
+          <li><a href="{{ url_for('chi_siamo') }}" class="{% if title == 'Chi Siamo' %}active{% endif %}">Chi Siamo</a></li>
+          <li><a href="{{ url_for('servizi') }}" class="{% if title == 'Servizi' %}active{% endif %}">Servizi</a></li>
+          <!-- <li><a href="{{ url_for('prezzo') }}" class="{% if title == 'Prezzo' %}active{% endif %}">Prezzo</a></li> -->
+          <!-- <li><a href="{{ url_for('ritira') }}" class="{% if title == 'Ritira' %}active{% endif %}">Ritira</a></li> -->
+
+          <!-- <li><a href="{{ url_for('servizi_tende') }}" class="{% if title == 'Servizi Tende' %}active{% endif %}">Servizi Tende</a></li> -->       
+          <li><a href="{{ url_for('contatti') }}" class="{% if title == 'Contatti' %}active{% endif %}">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; {{ 2025 }} Lavanderia Pulitolindo — Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+</body>
+</html>
