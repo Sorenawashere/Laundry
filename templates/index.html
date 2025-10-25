@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lavanderia Pulitolindo Torino - La prima lavanderia che lava a secco senza percloroetilene. Servizio a domicilio con 20 anni di esperienza.">
+  <meta name="description" content="Lavanderia Pulitolindo Torino - La prima lavanderia che lava a secco in modo ecologico. Servizio a domicilio con 20 anni di esperienza.">
   <title>Lavanderia Pulitolindo Torino - Lavanderia Stireria Torino</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -35,7 +35,7 @@
     }
     .logo {
       font-size:1.8rem; font-weight:800;
-      background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+      background:linear-gradient(135deg,#48bb78 0%,#38a169 100%);
       -webkit-background-clip:text; -webkit-text-fill-color:transparent;
     }
     .nav-links { display:flex; list-style:none; gap:2rem; }
@@ -44,13 +44,13 @@
       padding:0.5rem 1rem; border-radius:25px; transition:all .3s ease;
     }
     .nav-links a:hover {
-      background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+      background:linear-gradient(135deg,#48bb78 0%,#38a169 100%);
       color:white; transform:translateY(-2px);
     }
 
     /* --- Hero (purple gradient + Dove Siamo) --- */
     .hero {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
       min-height: 130vh;           /* taller gradient area */
       display: flex;
       flex-direction: column;
@@ -79,13 +79,13 @@
       font-size:1.1rem; font-weight:600; cursor:pointer;
       transition:all .3s ease; text-decoration:none; display:inline-flex; align-items:center; gap:.5rem;
     }
-    .btn-primary { background:white; color:#667eea; box-shadow:0 10px 30px rgba(0,0,0,0.2); }
+    .btn-primary { background:white; color:#48bb78; box-shadow:0 10px 30px rgba(0,0,0,0.2); }
     .btn-primary:hover { transform:translateY(-3px); box-shadow:0 15px 40px rgba(0,0,0,0.3); }
     .btn-secondary { background:rgba(255,255,255,0.2); color:white; border:2px solid rgba(255,255,255,0.3); }
     .btn-secondary:hover { background:rgba(255,255,255,0.3); transform:translateY(-3px); }
 
     .hero-image img {
-      width:100%; border-radius:20px; height:auto;
+      width:70%; border-radius:20px; height:auto;
       box-shadow:0 20px 60px rgba(0,0,0,0.3);
       transform:perspective(1000px) rotateY(-5deg);
     }
@@ -132,7 +132,7 @@
     .services { background:#f8fafc; }
     .about { background:white; }
     .contact {
-      background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+      background:linear-gradient(135deg,#48bb78 0%,#38a169 100%);
       color:white;
     }
 
@@ -149,10 +149,10 @@
       position:relative;
     }
     .service-card:hover{ transform:translateY(-10px); box-shadow:0 20px 50px rgba(0,0,0,0.15);}
-    .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);}
+    .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,#48bb78 0%,#38a169 100%);}
     .service-icon{
       width:80px;height:80px;border-radius:20px;
-      background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+      background:linear-gradient(135deg,#48bb78 0%,#38a169 100%);
       display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;margin-bottom:1.5rem;
     }
 
@@ -167,6 +167,12 @@
       display:flex; align-items:center; gap:1rem;
       padding:1rem; background:rgba(255,255,255,0.1);
       border-radius:15px; backdrop-filter:blur(10px);
+      cursor:pointer; transition:all 0.3s ease;
+    }
+    .contact-item:hover {
+      background:rgba(255,255,255,0.2);
+      transform:translateY(-2px);
+      box-shadow:0 8px 25px rgba(0,0,0,0.2);
     }
     .contact-item i {
       width:50px; height:50px; border-radius:50%;
@@ -210,7 +216,7 @@
       <div class="logo">Pulitolindo Lavanderia</div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#curtains">Servizi Tende</a></li>
+        <li><a href="#prices">Prezzi</a></li>
         <li><a href="#services">Servizi</a></li>
         <li><a href="#about">Chi Siamo</a></li>
         <li><a href="#contact">Contatti</a></li>
@@ -223,14 +229,15 @@
     <div class="hero-content">
       <div class="hero-text">
         <h1>Lavanderia Pulitolindo a Torino</h1>
-        <p>La prima lavanderia che lava a secco senza percloroetilene. Siamo ormai da 20 anni un punto di riferimento per qualsiasi esigenza nel settore dei lavaggi.</p>
+        <p>La prima lavanderia che lava a secco in modo ecologico. Siamo ormai da 20 anni un punto di riferimento per ogni esigenza nel settore dei lavaggi.</p>
         <div class="cta-buttons">
           <a href="https://wa.me/393894926880" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i>WhatsApp</a>
           <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i>Contattaci</a>
         </div>
+        <p style="font-size:0.9rem;color:rgba(255,255,255,0.8);margin-top:1rem;font-style:italic;">Chiama o scrivi su WhatsApp per domande, opzioni di consegna e altre informazioni</p>
       </div>
       <div class="hero-image">
-        <img src="{{ url_for('static', filename='photos/servizi-photo-1.jpg') }}" alt="Lavaggio tappeti professionale">
+        <img src="{{ url_for('static', filename='photos/muhamad1.jpg') }}" alt="Lavanderia Pulitolindo Torino">
       </div>
     </div>
 
@@ -270,7 +277,7 @@
             <div style="width:50px;height:50px;background:rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:white;">
               <i class="fas fa-store"></i>
             </div>
-            <h3>Lavanderia Nord</h3>
+            <h3>Lavanderia Zona Tribulane</h3>
           </div>
           <div style="margin-bottom:1rem;">
             <img src="{{ url_for('static', filename='photos/laundry2.png') }}" alt="Lavanderia Nord" style="width:100%;height:150px;object-fit:cover;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.2);">
@@ -301,9 +308,134 @@
         <h2>Prezzi</h2>
         <p>Il costo del servizio di ritiro a domicilio è 5€, Invece per una spesa di 70€, è Gratis!!</p>
       </div>
-      <div style="text-align:center;padding:4rem 0;color:#718096;">
-        <i class="fas fa-euro-sign" style="font-size:3rem;opacity:0.3;margin-bottom:1rem;"></i>
-        <p style="font-size:1.2rem;">Contenuto prezzi in arrivo...</p>
+      
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem;margin-bottom:3rem;">
+        
+        <!-- Abbigliamento -->
+        <div style="background:white;border-radius:15px;padding:2rem;box-shadow:0 10px 30px rgba(0,0,0,0.1);border-top:4px solid #48bb78;">
+          <h3 style="color:#2d3748;margin-bottom:1.5rem;font-size:1.4rem;display:flex;align-items:center;gap:0.5rem;">
+            <i class="fas fa-tshirt" style="color:#48bb78;"></i>Abbigliamento
+          </h3>
+          <div style="display:flex;flex-direction:column;gap:0.8rem;">
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Gonna</span>
+              <span style="color:#48bb78;font-weight:600;">€6.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Pantaloni</span>
+              <span style="color:#48bb78;font-weight:600;">€6.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Giacca</span>
+              <span style="color:#48bb78;font-weight:600;">€7.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Camicia/Camicetta</span>
+              <span style="color:#48bb78;font-weight:600;">€3.90</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Felpa</span>
+              <span style="color:#48bb78;font-weight:600;">€6.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Abito donna</span>
+              <span style="color:#48bb78;font-weight:600;">€12.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Giubbotto/Giacca a vento</span>
+              <span style="color:#667eea;font-weight:600;">da €15.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Cappotto/Impermeabile</span>
+              <span style="color:#667eea;font-weight:600;">da €12.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;">
+              <span style="color:#4a5568;">Giubbotti piumini</span>
+              <span style="color:#667eea;font-weight:600;">da €15.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arredamento -->
+        <div style="background:white;border-radius:15px;padding:2rem;box-shadow:0 10px 30px rgba(0,0,0,0.1);border-top:4px solid #2f855a;">
+          <h3 style="color:#2d3748;margin-bottom:1.5rem;font-size:1.4rem;display:flex;align-items:center;gap:0.5rem;">
+            <i class="fas fa-home" style="color:#2f855a;"></i>Arredamento
+          </h3>
+          <div style="display:flex;flex-direction:column;gap:0.8rem;">
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Coperta lana</span>
+              <span style="color:#2f855a;font-weight:600;">€18.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Piumone sintetico</span>
+              <span style="color:#2f855a;font-weight:600;">€20.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Piumone d'oca</span>
+              <span style="color:#2f855a;font-weight:600;">€25.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Copriletto</span>
+              <span style="color:#2f855a;font-weight:600;">€18.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Merinos</span>
+              <span style="color:#2f855a;font-weight:600;">€30.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Merinos doppia facciata</span>
+              <span style="color:#2f855a;font-weight:600;">€35.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Tende</span>
+              <span style="color:#764ba2;font-weight:600;">da €4.00/mq</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;">
+              <span style="color:#4a5568;">Lavaggio tappeti</span>
+              <span style="color:#2f855a;font-weight:600;">€8.00/kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Capi in Pelle -->
+        <div style="background:white;border-radius:15px;padding:2rem;box-shadow:0 10px 30px rgba(0,0,0,0.1);border-top:4px solid #276749;">
+          <h3 style="color:#2d3748;margin-bottom:1.5rem;font-size:1.4rem;display:flex;align-items:center;gap:0.5rem;">
+            <i class="fas fa-gem" style="color:#276749;"></i>Capi in Pelle
+          </h3>
+          <div style="display:flex;flex-direction:column;gap:0.8rem;">
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Gonna/Pantalone</span>
+              <span style="color:#276749;font-weight:600;">€25.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Giubbotti/Giacche</span>
+              <span style="color:#276749;font-weight:600;">€35.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Giacconi/Cappotti</span>
+              <span style="color:#276749;font-weight:600;">€65.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Cappelli/Borse/Guanti</span>
+              <span style="color:#276749;font-weight:600;">€20.00-€30.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #f1f5f9;">
+              <span style="color:#4a5568;">Colli/Manicotti/Sciarpe</span>
+              <span style="color:#276749;font-weight:600;">€20.00</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0.5rem 0;">
+              <span style="color:#4a5568;">Giubbotti/Giacconi pelliccia</span>
+              <span style="color:#276749;font-weight:600;">€50.00-€80.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:linear-gradient(135deg,#48bb78 0%,#38a169 100%);border-radius:15px;padding:2rem;text-align:center;color:white;">
+        <h3 style="margin-bottom:1rem;font-size:1.3rem;">💡 Note Speciali</h3>
+        <p style="margin-bottom:0.5rem;opacity:0.9;">• Solo stiro per camicie: <strong>€2.90</strong></p>
+        <p style="margin-bottom:0.5rem;opacity:0.9;">• Pelliccia ecologica/Ecopelle: <strong>€20.00-€25.00</strong></p>
+        <p style="opacity:0.9;">• Tutti i prezzi possono variare in base alle dimensioni e al tipo di trattamento richiesto</p>
       </div>
     </div>
   </section>
@@ -318,10 +450,10 @@
       <div class="services-grid">
         <div class="service-card"><div class="service-icon"><i class="fas fa-tshirt"></i></div><h3>Lavaggio Tappeti</h3><p>Trattamento professionale per tappeti di ogni tipo con macchinari all'avanguardia e prodotti specifici.</p></div>
         <div class="service-card"><div class="service-icon"><i class="fas fa-home"></i></div><h3>Lavaggio Tende</h3><p>Ritiriamo le vostre tende, le laviamo e facciamo cucire e le montiamo a casa vostra entro 48 ore.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-truck"></i></div><h3>Ritiro a Domicilio</h3><p>Ritiro e Consegna al costo di 5€, Invece per un spesa di 40€, è Gratis!!</p></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-truck"></i></div><h3>Ritiro a Domicilio</h3><p>Ritiro e consegna al costo di 5€, Invece per un spesa di 70€, è Gratis!!</p></div>
         <div class="service-card"><div class="service-icon"><i class="fas fa-star"></i></div><h3>Servizio Rapido</h3><p>Perfezionato in 20 anni di esperienza, il nostro servizio rapido garantisce risultati eccellenti.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-gem"></i></div><h3>Trattamenti Speciali</h3><p>Abiti da sposa, pelle, piumoni, giacche: ogni capo riceve il trattamento dedicato.</p></div>
-        <div class="service-card"><div class="service-icon"><i class="fas fa-shield-alt"></i></div><h3>Garanzia Qualità</h3><p>Attenzione ai dettagli e cura professionale: la vostra soddisfazione è la nostra priorità.</p></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-gem"></i></div><h3>Trattamenti Speciali</h3><p>Abiti da sposa, pelle, piumoni, giacche: ogni capo riceve un trattamento dedicato.</p></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-shield-alt"></i></div><h3>Garanzia di Qualità</h3><p>Attenzione ai dettagli e cura professionale: la vostra soddisfazione è la nostra priorità.</p></div>
       </div>
     </div>
   </section>
@@ -332,11 +464,11 @@
       <div class="about-content">
         <div class="about-text">
           <h2>Chi Siamo</h2>
-          <p>Siamo ormai da 20 anni Lavanderia Pulitolindo è un punto di riferimento per qualsiasi esigenza nel settore dei lavaggi. Esperienza ed aggiornamento continuo ci permettono di garantire al nostro cliente piena affidabilità e competitività di tutti i nostri servizi.</p>
-          <p>Ci contraddistingue serietà, velocità ed affidabilità. Caratteristiche, al giorno d'oggi, molto difficili da trovare. Non esitate a contattarci per qualsiasi genere di esigenza, saremo lieti di seguirVi nel migliore dei modi cercando di proporVi le giuste idee al miglior prezzo.</p>
-          <p>Questo sistema di lavoro permette di trattare capi di qualsiasi tipo: abiti da sposa, giacche a vento, capi in pelle e renna, piumoni sintetici e d'oca, lavaggio tappeti torino, giacche per moto e biancheria di ogni genere.</p>
+          <p>Da 20 anni Lavanderia Pulitolindo è un punto di riferimento per ogni esigenza nel settore dei lavaggi. Esperienza ed aggiornamento continuo ci permettono di garantire al nostro cliente piena affidabilità e competitività di tutti i nostri servizi.</p>
+          <p>Ci contraddistinguono serietà, velocità ed affidabilità, caratteristiche, al giorno d'oggi, molto difficili da trovare. Non esitate a contattarci per ogni genere di esigenza: saremo lieti di seguirVi nel migliore dei modi cercando di proporVi le giuste idee al miglior prezzo.</p>
+          <p>Questo sistema di lavoro permette di trattare capi di qualsiasi tipo: abiti da sposa, giacche a vento, capi in pelle e renna, piumoni sintetici e d'oca, lavaggio tappeti, giacche per moto e biancheria di ogni genere.</p>
         </div>
-        <div class="about-image"><img src="{{ url_for('static', filename='photos/servizi-photo-2.jpg') }}" alt="Lavanderia professionale"></div>
+        <div class="about-image"><img src="{{ url_for('static', filename='photos/laundry3.jpg') }}" alt="Lavanderia professionale"></div>
       </div>
     </div>
   </section>
@@ -347,20 +479,24 @@
       <div class="contact-content">
         <div class="contact-info">
           <h2>Contattaci</h2>
-          <p>Pronto per un servizio di lavanderia professionale? Contattaci per maggiori informazioni o per prenotare il ritiro.</p>
+          <p>Sei pronto per un servizio di lavanderia professionale? Contattaci per maggiori informazioni o per prenotare il ritiro.</p>
 
           <div class="contact-details">
-            <div class="contact-item">
+            <div class="contact-item" onclick="window.open('https://wa.me/393894926880', '_blank')">
               <i class="fab fa-whatsapp"></i>
               <div><strong>WhatsApp</strong><br><a href="https://wa.me/393894926880" target="_blank" style="color:white;text-decoration:none;">+39 389 492 6880</a></div>
             </div>
-            <div class="contact-item">
+            <div class="contact-item" onclick="window.open('mailto:mohammed.nachit67@gmail.com', '_blank')">
               <i class="fas fa-envelope"></i>
               <div><strong>Email</strong><br><a href="mailto:mohammed.nachit67@gmail.com" style="color:white;text-decoration:none;">mohammed.nachit67@gmail.com</a></div>
             </div>
-            <div class="contact-item">
+            <div class="contact-item" onclick="window.open('https://maps.app.goo.gl/EP8mtyCPAi4XQJt39', '_blank')">
               <i class="fas fa-map-marker-alt"></i>
-              <div><strong>Indirizzo</strong><br><a href="https://www.google.com/maps/dir/?api=1&destination=Via+Della+Misericordia+4,+Angolo+Via+Garibaldi,+10122+Torino" target="_blank" style="color:white;text-decoration:none;">Via Della Misericordia 4, Angolo Via Garibaldi, 10122 Torino</a></div>
+              <div><strong>Indirizzo Centro</strong><br><a href="https://maps.app.goo.gl/EP8mtyCPAi4XQJt39" target="_blank" style="color:white;text-decoration:none;">Via Della Misericordia 4, Angolo Via Garibaldi, 10122 Torino</a></div>
+            </div>
+            <div class="contact-item" onclick="window.open('https://maps.app.goo.gl/woaYZ5Y3TAnp97YK7', '_blank')">
+              <i class="fas fa-map-marker-alt"></i>
+              <div><strong>Indirizzo Zona Tribunale</strong><br><a href="https://maps.app.goo.gl/woaYZ5Y3TAnp97YK7" target="_blank" style="color:white;text-decoration:none;">Via Avigliana 15/d, 10138 Torino</a></div>
             </div>
           </div>
         </div>

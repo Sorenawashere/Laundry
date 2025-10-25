@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import smtplib
+import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from send_email import send_email
 
 app = Flask(__name__)
-app.secret_key = 'your-secret-key-here'  # Change this to a random secret key
+app.secret_key = os.environ.get('SECRET_KEY', 'your-secret-key-here')  # Use environment variable for production
 
 @app.route('/')
 def home():
@@ -17,29 +19,13 @@ def send_mail():
         email = request.form['email']
         message = request.form['message']
         
-        # Email configuration (you'll need to set up your SMTP settings)
-        # For now, we'll just flash a success message
-        flash('Messaggio inviato con successo! Ti contatteremo presto.', 'success')
+        # Use the send_email function from send_email.py
+        success = send_email(name, email, message)
         
-        # Here you would normally send the email using SMTP
-        # smtp_server = "smtp.gmail.com"
-        # smtp_port = 587
-        # sender_email = "your-email@gmail.com"
-        # sender_password = "your-app-password"
-        # 
-        # msg = MIMEMultipart()
-        # msg['From'] = sender_email
-        # msg['To'] = "info@pulitolindo.it"
-        # msg['Subject'] = f"Nuovo messaggio da {name}"
-        # 
-        # body = f"Nome: {name}\nEmail: {email}\nMessaggio: {message}"
-        # msg.attach(MIMEText(body, 'plain'))
-        # 
-        # server = smtplib.SMTP(smtp_server, smtp_port)
-        # server.starttls()
-        # server.login(sender_email, sender_password)
-        # server.send_message(msg)
-        # server.quit()
+        if success:
+            flash('Messaggio inviato con successo! Ti contatteremo presto.', 'success')
+        else:
+            flash('Errore nell\'invio del messaggio. Riprova più tardi.', 'error')
         
     except Exception as e:
         flash('Errore nell\'invio del messaggio. Riprova più tardi.', 'error')
@@ -47,4 +33,7 @@ def send_mail():
     return redirect(url_for('home') + '#contact')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # For production, use environment variables
+    port = int(os.environ.get('PORT', 5000))
+    debug = os.environ.get('FLASK_ENV') == 'development' 
+    app.run(host='0.0.0.0', port=port, debug=debug)
